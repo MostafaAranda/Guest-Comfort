@@ -1,0 +1,140 @@
+
+
+.hidden {
+    display: none;
+}
+.show {
+    display: block; 
+}
+.header h3 
+{
+    border: 1px solid var(--main_color);
+}
+
+#form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1);
+    border-radius:10px ;
+    text-align: center;
+}
+#form-container .inbut-box
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 10px;
+}
+#form-container .inbut-box label
+{
+    font-size: 20px;
+    color: var(--second_color);
+}
+#form-container .inbut-box input::placeholder
+{
+    color:#9e9a9a;
+}
+
+#form-container button
+{
+    margin-top: 15px;
+    padding: 8px 40px;
+    border: 1px solid var(--main_color);
+    color: var(--main_color);
+    border-radius: 8px;
+}
+
+#form-container .inbut-box select ,#form-container .inbut-box input
+{
+    background-color:transparent;
+    width: 60%;
+    height: 100%;
+    outline:none;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--second_color);
+    border:1px solid #ccc;
+    
+    
+}
+#form-container .inbut-box select optgroup
+{
+        color: #9e9a9a;
+}
+#form-container .inbut-box select  option 
+{
+    color:#000;
+}
+
+.nav-pills .nav-link
+{
+    color: var(--main_color);
+    transition: all .7s;
+}
+
+.nav-pills .nav-link.active ,.nav-pills .nav-link:hover { 
+    background-color: var(--main_color);
+    color: #fff;
+}
+
+
+
+
+.content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.content .box
+{
+    flex-grow: 1;
+    height: 400px;
+    flex-basis: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.content .box .img
+{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.content .box .img img
+{
+    width: 100%;
+    object-fit: cover;
+}
+ .content .box .title h3
+{
+    font-size:30px ;
+    font-weight: bold;
+    margin-top: 8px;
+    color:var(--main_color) ;
+}
+.header button 
+{
+    height: 50px;
+    padding: 0 15px;
+    margin-block: 10px;
+    border-radius: 10px;
+    color: var(--main_color);
+    border: 1px solid var(--main_color);
+    transition: all 0.7s;
+}
+.header button:hover 
+{
+    background-color: var(--main_color);
+    color: #fff;
+}

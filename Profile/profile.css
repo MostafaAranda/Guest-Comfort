@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #F4F4F5;
+
+ 
+}
+
+.container-fluid {
+    display: flex;
+    flex: 1;
+    padding-left: 0;
+}
+
+.navaside {
+    background-color:#09052d;
+    padding: 20px;
+    width: 80px;
+    overflow: hidden;
+    transition: .7s;
+}
+.navaside:hover
+{
+    width: 260px;
+}
+.img-box
+{
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    overflow: hidden; 
+    flex-shrink: 0;
+}
+.img-box img
+{
+    width: 100%;
+}
+.navaside .profile
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+.navaside .profile h2
+{
+    font-size:20px ;
+    text-transform: capitalize;
+}
+.navaside ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    position: relative;
+    height: 95%;
+} 
+.navaside a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding:10px ;
+    margin:20px 0px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: background-color 0.4s;
+}
+.navaside a:hover
+ {
+    background-color: #ffffff55;
+}
+.navaside a p
+{
+    margin: 0;
+}
+.logout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.logout a
+{
+    background-color: #a00;
+}
+ul li a i
+{
+    font-size: 25px;
+}
+.content {
+    flex: 1;
+    padding: 2rem;
+    
+}
+
+.content-page {
+    display: none;
+    
+
+}

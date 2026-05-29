@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ~ bootstrab -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ~ font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" <!-- ~
+        google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- ~ css -->
+    <link rel="stylesheet" href="../Home/style.css">
+    <link rel="stylesheet" href="preferences.css">
+    <title> Guest Comfort | preferences </title>
+</head>
+
+<body>
+
+    <div class="header ">
+        <div class="title bg-secondary-subtle  p-5 pb-2 mb-3  m-color   rounded-3  ">
+            <h3 class="fa-2x">Stay preferences</h3>
+            <p class="massage">Complete your preferences to enjoy a personalised experience during your stay.</p>
+        </div>
+
+        <a href="../Profile/profile.html" class=" text-body my-5 fa-1xl">
+            <i class="fa-solid fa-arrow-left-long m-2"></i>
+            previous
+        </a>
+    </div>
+
+    <section id="preferences" class="container-fluid gallery p-5 mt-3  bg-body-tertiary">
+
+        <!-- ~===== HEADERS ====== -->
+        <ul class="nav nav-pills mb-5 w-fit mx-auto justify-content-center align-items-center gap-2" id="pills-tab"
+            role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="true" data-bs-target="#ROOM">Room</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="true" data-bs-target="#ACCESSIBILITY">Accessibility</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="true" data-bs-target="#FOOD">Food and drinks</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="true" data-bs-target="#INTEREST">Interests</button>
+            </li>
+        </ul>
+
+        <form >
+        <div class="tab-content m-5  " id="pills-tabContent">
+            <!-- ~===== ROOM ====== -->
+            <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" id="ROOM">
+                <div class="content">
+                            <fieldset>
+                                <h2>Elevator proximity</h2>
+                                <label><input type="checkbox" name="elevator" value="near"> Near to elevator</label><br>
+                                <label><input type="checkbox" name="elevator" value="far"> Far from elevator </label><br>
+                            </fieldset>
+
+                            <fieldset>
+                                <h2>Floor location</h2>
+                                <label><input type="checkbox" name="floor" value="lower">Lower floor </label><br>
+                                <label><input type="checkbox" name="floor" value="upper">Upper floor  </label><br>
+                            </fieldset>
+
+                            <fieldset>
+                                <h2>Bathroom</h2>
+                                <label><input type="checkbox" name="bathtub" value="bathtub">Bathtub </label><br>
+                                <label><input type="checkbox" name="bathtub" value="shower">Shower </label><br>
+                            </fieldset>
+
+                            <fieldset>
+                                <h2>Air-conditioning</h2>
+                                <label><input type="checkbox" name="Air-conditioning" value="turned-on">Turned on </label><br>
+                                <label><input type="checkbox" name="Air-conditioning" value="turned-off">Turned off </label><br>
+                            </fieldset>
+
+                            <fieldset>
+                                <h2>Room type</h2>
+                                <label><input type="checkbox" name="room-type" value="smok">Smoking room </label><br>
+                                <label><input type="checkbox" name="room-type" value="non-smok">Non-Smoking room </label><br>
+                            </fieldset>
+
+                            <fieldset>
+                                <h2>Newspaper</h2>
+                                <label><input type="checkbox" name="newspaper" value="international">International </label><br>
+                                <label><input type="checkbox" name="newspaper" value="local">Local </label><br>
+                            </fieldset>
+
+                            <fieldset>
+                                <h2>Bed</h2>
+                                <label><input type="checkbox" name="bed" value="one-bed">One bed </label><br>
+                                <label><input type="checkbox" name="bed" value="two-bed">Two bed </label><br>
+                            </fieldset>
+
+                            <div class="multiple row w-100">
+                                <p >  Which of the below is the most important for you?</p>
+                                <div class="option ">
+                                    <label ><input type="checkbox" name="important" value="important-elevator">Near to elevator </label>
+                                    <label><input type="checkbox" name="important" value="important-floor">Lower floor </label>
+                                    <label><input type="checkbox" name="important" value="important-shower">Shower </label>
+                                    <label><input type="checkbox" name="important" value="important-smoking">Smoking room</label>
+                                    <label><input type="checkbox" name="important" value="important">Two beds</label>
+                                </div>
+                            </div>
+                           
+
+                </div>
+            </div>
+
+            <!-- ~===== Accessibilit ====== -->
+            <div class="tab-pane fade show " role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" id="ACCESSIBILITY">
+                <div class="content ">
+                            <div class="multiple row w-100">
+                                <p > You need help with</p>
+                                <div class="option ">
+                                    <label ><input type="checkbox" name="accessibility" value="hearing">Hearing </label>
+                                    <label><input type="checkbox" name="accessibility" value="mobility">Mobility </label>
+                                    <label><input type="checkbox" name="accessibility" value="visual">Visual </label>
+                                    <label><input type="checkbox" name="accessibility" value="wheelchair">Wheelchair</label>
+                                </div>
+                            </div>
+                </div>
+            </div>
+
+            <!-- ~===== Food ====== -->
+            <div class="tab-pane fade show " role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" id="FOOD">
+                <div class="content ">
+                            <div class="multiple row w-100 mb-4">
+                                <p > Do you have a specific diet?</p>
+                                <div class="option ">
+                                    <label ><input type="checkbox" name="diet" value="alcohol">Alcohol free</label>
+                                    <label><input type="checkbox" name="diet" value="egg">Eggs free </label>
+                                    <label><input type="checkbox" name="diet" value="lactose">Lactose free </label>
+                                    <label><input type="checkbox" name="diet" value="nuts">Nuts free</label>
+                                    <label><input type="checkbox" name="diet" value="sugar">Sugar free</label>
+                                </div>
+                            </div>
+                            
+                            <hr class="w-100 ">
+                           
+                            <div class="multiple row w-100 ">
+                                <p > What are your favourite cuisines?</p>
+                                <div class="option">
+                                    <label ><input type="checkbox" name="cuisines" value="vegetarian">Vegetarian</label>
+                                    <label><input type="checkbox" name="cuisines" value="halal">Halal </label>
+                                    <label><input type="checkbox" name="cuisines" value="local">Local</label>
+                                    <label><input type="checkbox" name="cuisines" value="international">International</label>
+                                    <label><input type="checkbox" name="cuisines" value="sugar">Sugar free</label>
+                                </div>
+                            </div>
+
+                            <hr class="w-100 ">
+        
+                            <div class="multiple row w-100">
+                                <p > What do you prefer to drink?</p>
+                                <div class="option">
+                                    <label ><input type="checkbox" name="drink" value="coffee">Coffee</label>
+                                    <label><input type="checkbox" name="drink" value="tea">Tea </label>
+                                    <label><input type="checkbox" name="drink" value="cocktails">Cocktails</label>
+                                </div>
+                            </div>
+                </div>
+            </div>
+
+            <!-- ~===== Interest ====== -->
+            <div class="tab-pane fade show " role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0" id="INTEREST">
+                <div class="content ">
+                            <div class="multiple row w-100 mb-4">
+                                <p > Sports & wellness</p>
+                                <div class="option ">
+                                    <label ><input type="checkbox" name="spport" value="beauty">Beauty</label>
+                                    <label><input type="checkbox" name="spport" value="gym">Gym </label>
+                                    <label><input type="checkbox" name="spport" value="spa">Spa/Massage </label>
+                                    <label><input type="checkbox" name="spport" value="yoga">Yoga/Meditation</label>
+                                </div>
+                            </div>
+                            
+                            <hr class="w-100 ">
+                           
+                            <div class="multiple row w-100 ">
+                                <p > Arts & culture</p>
+                                <div class="option">
+                                    <label ><input type="checkbox" name="Art" value="architecture">Architecture</label>
+                                    <label><input type="checkbox" name="Art" value="cinema">Cinema </label>
+                                    <label><input type="checkbox" name="Art" value="history">History</label>
+                                    <label><input type="checkbox" name="Art" value="painting">Painting</label>
+                                    <label><input type="checkbox" name="Art" value="music">Music</label>
+                                </div>
+                            </div>
+
+                            <hr class="w-100 ">
+        
+                            <div class="multiple row w-100">
+                                <p > Lifestyle</p>
+                                <div class="option">
+                                    <label ><input type="checkbox" name="drink" value="cultural">Cultural events</label>
+                                    <label><input type="checkbox" name="drink" value="ecology">Ecology</label>
+                                    <label><input type="checkbox" name="drink" value="family">Family activities</label>
+                                    <label><input type="checkbox" name="drink" value="gastronomy">Gastronomy</label>
+                                    <label><input type="checkbox" name="drink" value="sporting">Sporting events</label>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            
+        </div>
+        <p class="massage p-4">Our hotels will do their very best to suit your requests.</p>
+        <button>Save</button>
+        </form>
+
+    </section>
+
+    <!-- ~ footer -->
+   <footer id="footer">
+    <div class="container-fluid ">
+
+        <div class="row m-auto align-items-center justify-content-center">
+          
+          <div class=" col-3 log ">
+            <a href="../Home/home.html">
+            <img src="../images/logo.png" class="" alt="">
+            </a>
+          </div>
+            
+            <div class="col-3">
+              <div class="content">
+                <p>Sign up to receive <br> exclusive updates & email <br> offers.</p> 
+                <a href="../Form/Register.html">Sign Up</a>
+              </div>
+            </div>
+
+            
+            <div class="col-3 ">
+                <div class="content ms-5">
+                <p > Join ALL, the Accor <br> lifestyle loyalty <br> program</p> 
+                <a href="../Form/Login.html"> Log in</a>
+                </div>
+            </div>
+
+            <div class="col-3 d-flex flex-column justify-content-between g-5">
+              <div class="row justify-content-center">
+
+                <div class=" col-4 media  d-flex justify-content-center align-items-center  ">
+                  <a href="https://www.facebook.com/profile.php?id=61560294973552&mibextid=ZbWKwL" target="_blank">
+                     <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </div>
+                  
+                  <div class="col-4 media  d-flex justify-content-center align-items-center  ">
+                    <a href="">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </div>
+
+                  <div class=" col-4 media  d-flex justify-content-center align-items-center  ">
+                      <a href="https://www.instagram.com/guest.comfort?igsh=Z2c5dzRqNGg4d3du" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                  </div>
+              </div>
+
+              <div class=" content row  m-auto ">
+                <a href="../Form/Login.html"> Book Now</a>
+              </div>
+
+              
+                
+            </div>
+         </div>
+    </div>
+   </footer>
+
+    <!-- ~ JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../JS/index.js"></script>
+    <script src="service.js"></script>
+</body>
+
+</html>

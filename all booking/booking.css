@@ -1,0 +1,91 @@
+
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    
+    display: flex;
+    background:linear-gradient(to right bottom,#09052d,#494382 ,#09052d );
+   
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--main_color);
+    margin: 30px 0px 50px;
+}
+
+#reservations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+    padding: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0 0   10px #ccc;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100px;
+    text-align: left;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--main_color);
+    text-align: center;
+}
+
+.card p {
+    margin: 20px 5px;
+    color: #4d4949;
+}
+
+
+@media screen  and (max-width:800px){
+    .card {
+        max-width: 300px;
+    }
+    .container {
+        max-width: 500px;
+        
+    }
+}
+
+
+@media screen  and (max-width:600px){
+    .card {
+        max-width: 300px;
+    }
+    .container {
+        max-width: 500px;
+        
+    }
+}
+@media screen  and (max-width:500px){
+    .card {
+        max-width: 200px;
+    }
+    .container {
+        max-width: 300px;
+        
+    }
+}

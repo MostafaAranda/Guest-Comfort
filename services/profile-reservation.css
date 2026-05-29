@@ -1,0 +1,130 @@
+.profile-bg-color
+{
+    background-color:var(--profile_color);
+}
+body
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1px;
+    background:linear-gradient(to right bottom,#09052d,#494382 ,#09052d );
+
+}
+
+.parent
+{
+    width: 60%;
+    color: #fff;
+    background-color:transparent;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(20px) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    padding: 10px 40px 30px;
+    margin: 40px auto;
+}
+
+/* .parent h1
+{
+    font-size: 36px;
+    text-align: center;
+} */
+.parent .input-box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input 
+{
+    width: 60%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline:none;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255,0.2);
+    font-size: 16px;
+    color: #fff;
+    padding: 20px ;
+}
+.input-box input::placeholder
+{
+    color: #fff;
+}
+.input-box select 
+{
+    background-color: transparent;
+    width: 60%;
+    height: 100%;
+    outline:none;
+    border-radius: 10px;
+    padding: 10px;
+    color:#fff;
+}
+.input-box select option
+{
+    color:#000;
+}
+.input-box a
+{
+    display: inline;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.6s;
+    color: #494382;
+    background-color: #fff;
+    
+}
+.input-box a:hover
+{
+    background-color: #494382;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* input, select 
+{ 
+    width: 100%;
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+} */
+ /* ~ ======> صفحة (setting) <====== */
+#setting .parent
+{
+    background-color:var(--profile_color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+
+}
+#setting input::placeholder
+{
+    color: #ccc;
+}
+#setting button
+{
+    display: block;
+    margin:auto ;
+    background-color:#494382;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #494382;
+    outline: none;
+    color: #fff;
+    transition:all 0.7s ;
+}
+#setting button:hover
+{
+    background-color: #fff;
+    color:#494382 ;
+    border: 1px solid #494382;
+}

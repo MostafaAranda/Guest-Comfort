@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header #meeting
+{
+    height: 100vh;
+    background-image: url(../images/meeting.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+section
+{
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 0   10px #ccc;
+    margin-bottom: 40px;
+    padding: 0;
+    overflow:hidden;
+}
+section.container-fluid
+{
+    background-color: rgb(51, 48, 48);
+}
+section .row
+{
+    padding:30px;
+}
+section .img
+{
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+section .img img
+{
+    width: 100%;
+    border-radius: 10px;
+
+}
+section .content
+{
+    height: 100%;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.event-3
+{
+    height: 60vh;
+}
+button
+{
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    width:fit-content ;
+    margin:0 ;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--second_color);
+}
+
+
+
+
+
+@media screen  and (max-width:900px){
+    section{height: auto;}
+    section.service-content .img {margin-bottom: 15px;}
+}

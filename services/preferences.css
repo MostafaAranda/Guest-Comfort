@@ -1,0 +1,93 @@
+.header .title
+{
+    border-bottom: 1px solid var(--main_color);
+}
+
+p.massage
+{
+    font-size: 16px;
+    color:#726e6e;
+    padding-top: 7px;
+}
+section#preferences
+{
+    border-top: 1px solid var(--main_color);
+}
+.nav-pills .nav-link
+{
+    color: var(--main_color);
+    transition: all .7s;
+}
+
+.nav-pills .nav-link.active ,.nav-pills .nav-link:hover { 
+    background-color: var(--main_color);
+    color: #fff;
+}
+
+form .content
+{
+    background-color: rgba(24, 184, 104, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.content fieldset 
+{
+    flex-basis: 500px;
+    flex-grow: 1;
+    border-radius: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    /* width: 50%;  */
+}
+.content fieldset h2 ,.content .multiple p
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+ input
+{
+    margin: 7px;
+}
+
+.multiple .option
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 60px;
+}
+form button
+{
+    display: block;
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: var(--main_color);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin:20px auto;
+    transition: all .7s;
+}
+form button:hover
+{
+    color: var(--main_color);
+    border-color: var(--main_color);
+    background-color:#fff;
+}
+
+
+@media screen and (max-width:800px){
+    .multiple .option {display: block;}
+    .multiple .option label{display: block;}
+}
+
+@media screen and (max-width:1210px){
+
+    .content fieldset {flex-basis: 250px;}
+}

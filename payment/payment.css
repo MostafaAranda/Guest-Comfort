@@ -1,0 +1,88 @@
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background:linear-gradient(to right bottom,#09052d,#494382 ,#09052d );
+}
+
+a{
+    color:rgb(173, 139, 58);
+    align-self: flex-start;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #86817f;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+    background: #ccc0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 2px solid #aeaaa9;
+    border-radius: 8px;
+    padding:20px 20px;
+    margin-bottom: 20px;
+}
+
+legend 
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color:rgb(173, 139, 58);
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 10px;
+    color: #86817f;
+}
+
+.payment-details 
+{
+    display: none;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] 
+{
+    display: block;
+    margin: auto;
+    background-color: rgb(173, 139, 58);
+    color:#fff;
+    padding: 10px 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:all 0.7s;
+}
+
+input[type="submit"]:hover {
+    background-color:rgba(173, 139, 58, 0.7);
+    
+}

@@ -1,0 +1,42 @@
+.service .title
+{
+    border-radius: 10px;
+    box-shadow: 10px 10px 1px;
+    margin-bottom: 10px;
+}
+.service .content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.service .content a
+{
+    
+    background-color:#09052d;
+    height: 250px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s;
+}
+.service .content a:hover
+{
+    background-color: rgba(9, 5, 45 ,.4);
+    color:  #09052d;
+    cursor: pointer;
+}
+.service .content .box i
+{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+

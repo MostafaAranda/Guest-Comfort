@@ -1,0 +1,147 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+}
+#about-header
+{
+    height: 100vh;
+    background-image: url(../images/about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+section
+{
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 0   10px #ccc;
+    margin-bottom: 40px;
+    padding: 40px;
+    
+}
+
+
+section.about-content .img
+{
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+section.about-content .img img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+section.about-content .content
+{
+    height: 100%;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+section.about-content .content h2
+{
+  letter-spacing:2px;
+    line-height: 1.5;
+}
+
+
+section#about-us
+{
+  padding: 40px;
+  background-color: #ccc;
+}
+section#about-us .content
+{
+  margin-top: 50px;
+  position: relative;
+}
+section#about-us .vertical-line
+{
+  position: absolute;
+  top: -15px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  border-radius: 10px;
+  background-color: var(--second_color);
+}
+section#about-us .item-container
+{
+  display: flex;
+  align-items: center;
+  margin: 40px 0px;
+  position: relative;
+  color:#4a4545;
+  font-size: 18px;
+  font-weight:bold ;
+  text-wrap:nowrap;
+
+}
+.line{
+  position:absolute;
+  left: 50%;
+  width: 10%;
+  height: 2px;
+  background-color:var(--second_color);
+}
+.left .line
+{
+  transform: translateX(-100%);
+}
+.left .item {
+  position:absolute;
+  left: 22%;
+ 
+}
+.right .item
+{
+  position:absolute;
+ right: 18%;
+}
+
+#map .content
+{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  gap: 15px;
+}
+#map .map-link
+{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+@media screen  and (max-width:1750px){
+  section{height: auto;}
+  section.about-content .img {margin-bottom: 15px;}
+}
+
+@media screen  and (max-width:1400px){
+  .line{width: 6%;}
+}
+
+@media screen  and (max-width:1220px){
+  section#about-us .vertical-line{ left: 0;}
+  .line{left: 0;}
+  .left .line{ transform: translateX(0%);}
+   .left .item {left: 7%;}
+  .right .item{left: 7%;}
+}
+

@@ -1,0 +1,64 @@
+
+#service
+{
+    height: 100vh;
+    background-image: url(../images/service.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+section
+{
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 0   10px #ccc;
+    margin-bottom: 40px;
+}
+section.service-content .row
+{
+    padding: 40px;
+}
+
+section.service-content .img
+{
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+section.service-content .img img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+section.service-content .content
+{
+    height: 100%;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+section.service-content .content button
+{
+    padding: 10px 30px;
+    color: #fff;
+    background-color: var(--second_color);
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    margin:10px auto;
+    transition: all .7s;
+}
+
+
+
+@media screen  and (max-width:900px){
+    section{height: auto;}
+    section.service-content .img {margin-bottom: 15px;}
+}
+
